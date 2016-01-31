@@ -13,6 +13,8 @@
 		FC032B7C1C5ED256000A0C01 /* TweetStore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC032B7A1C5ED256000A0C01 /* TweetStore.xcdatamodeld */; };
 		FC032B7E1C5ED256000A0C01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC032B7D1C5ED256000A0C01 /* Assets.xcassets */; };
 		FC032B811C5ED256000A0C01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC032B7F1C5ED256000A0C01 /* LaunchScreen.storyboard */; };
+		FC032B8F1C5ED537000A0C01 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC032B8E1C5ED537000A0C01 /* Networking.swift */; };
+		FC032B911C5ED568000A0C01 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC032B901C5ED568000A0C01 /* PersistenceManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		FC032B7D1C5ED256000A0C01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC032B801C5ED256000A0C01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC032B821C5ED256000A0C01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC032B8E1C5ED537000A0C01 /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		FC032B901C5ED568000A0C01 /* PersistenceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +60,13 @@
 		FC032B721C5ED256000A0C01 /* TweetStore */ = {
 			isa = PBXGroup;
 			children = (
+				FC032B881C5ED43B000A0C01 /* Models */,
+				FC032B891C5ED445000A0C01 /* Views */,
+				FC032B8A1C5ED44A000A0C01 /* Controllers */,
+				FC032B8B1C5ED45B000A0C01 /* Networking */,
+				FC032B8C1C5ED465000A0C01 /* Stores */,
+				FC032B8D1C5ED46D000A0C01 /* Helpers */,
 				FC032B731C5ED256000A0C01 /* AppDelegate.swift */,
-				FC032B751C5ED256000A0C01 /* ViewController.swift */,
 				FC032B771C5ED256000A0C01 /* Main.storyboard */,
 				FC032B7D1C5ED256000A0C01 /* Assets.xcassets */,
 				FC032B7F1C5ED256000A0C01 /* LaunchScreen.storyboard */,
@@ -65,6 +74,51 @@
 				FC032B7A1C5ED256000A0C01 /* TweetStore.xcdatamodeld */,
 			);
 			path = TweetStore;
+			sourceTree = "<group>";
+		};
+		FC032B881C5ED43B000A0C01 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		FC032B891C5ED445000A0C01 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		FC032B8A1C5ED44A000A0C01 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FC032B751C5ED256000A0C01 /* ViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		FC032B8B1C5ED45B000A0C01 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				FC032B8E1C5ED537000A0C01 /* Networking.swift */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		FC032B8C1C5ED465000A0C01 /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				FC032B901C5ED568000A0C01 /* PersistenceManager.swift */,
+			);
+			name = Stores;
+			sourceTree = "<group>";
+		};
+		FC032B8D1C5ED46D000A0C01 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +193,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC032B761C5ED256000A0C01 /* ViewController.swift in Sources */,
+				FC032B911C5ED568000A0C01 /* PersistenceManager.swift in Sources */,
 				FC032B741C5ED256000A0C01 /* AppDelegate.swift in Sources */,
 				FC032B7C1C5ED256000A0C01 /* TweetStore.xcdatamodeld in Sources */,
+				FC032B8F1C5ED537000A0C01 /* Networking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
